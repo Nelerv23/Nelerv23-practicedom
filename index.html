@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Holidays</title>
+    <style>
+         #heading{
+            color: rgb(184, 38, 1);
+            background-color:rgb(6, 47, 79);
+            padding: 10px;
+            text-shadow: 1px 1px  white;
+            width: 30%;
+            font-size: 2rem;
+            text-align: center;
+            margin: 0 auto 0 auto;
+        }
+
+        ul{
+            border: none;
+            padding:0;
+            margin: 0;
+        }
+
+        li{
+            background-color: 	rgb(6, 47, 79);
+            color: white;
+            border-top: 1px solid crimson;
+            border-bottom: 1px solid crimson;
+            font-size: 24px;
+            letter-spacing: .05em;
+            list-style-type: none;
+            text-shadow: 2px 2px 1px red;
+            height: 50px;
+            padding-left: 1em;
+            padding-top: 10px;
+        }
+
+        .holiday{
+            background-color:rgb(6, 47, 79);
+            text-align: center;
+            margin: 0 auto 0 auto;
+            width: 30%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .cool{
+            background-color: rgb(184, 38, 1);
+            text-align: center;
+            margin: 0 auto 0 auto;
+            width:30%;
+            color:white;
+            text-decoration: none;
+        }
+        .warm{
+            background-color:rgb(6, 47, 79);
+            text-align: center;
+            margin: 0 auto 0 auto;
+            width: 30%;
+            color: white;
+            text-decoration: none;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1 id="heading">National Holidays</h1>
+    <ul>
+        <li id="one" class="holiday">New Year's Day</li>
+        <li id="two" class="holiday">MLK Day</li>
+        <li id="three" class="holiday">George Washington's Birthday</li>
+        <li id="four" class="holiday">Memorial Day</li>
+        <li id="five" class="holiday">Juneteenth</li>
+        <li id="six" class="holiday">Independence Day</li>
+        <li id="seven" class="holiday">Labor Day</li>
+        <li id="eight" class="holiday">Columbus Day</li>
+        <li id="nine" class="holiday">Veterans Day</li>
+        <li id="ten" class="holiday">Thanksgiving Day</li>
+        <li id="eleven" class="holiday">Christmas Day</li>
+
+    </ul>
+    <script>
+         var elements = document.querySelectorAll('li.holiday');
+        for (var i=0; i<elements.length;i++){
+            if(i%2===0) {
+                elements[i].className='cool';
+            }
+
+            else if(i%2===1) {
+                elements[i].className='warm';
+            }
+        }
+    </script>
+</body>
+</html>
